@@ -10,5 +10,9 @@ Menu
             <spring:url value="/about" var="aboutUrl" htmlEscape="true"/>
             <a href="${aboutUrl}">About</a>
         </li>
+         <li>
+            <spring:url value="/form" var="formUrl" htmlEscape="true"/>
+            <a href="${formUrl}">Form</a>
+        </li>
     </ul>
 </div>
