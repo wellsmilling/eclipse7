@@ -18,8 +18,8 @@
 </span>
             
  
-            <form:form method="post" action="login">
-		<table>
+            <form:form method="post" action="addContact">
+<%-- 		<table>
 			<tr>
 				<td><label> <strong><spring:message
 								code="label.firstName" /></strong>
@@ -36,7 +36,27 @@
 				<spring:message code="label.submit" var="labelSubmit"></spring:message>
 				<td colspan="2"><input type="submit" value="${labelSubmit}" /></td>
 			</tr>
-		</table>
+		</table> --%>
+		
+		<table>
+    <tr>
+        <td><form:label path="firstname"><strong><spring:message
+								code="label.firstName" /></strong></form:label></td>
+        <td><form:input path="firstname" /></td> 
+    </tr>
+    <tr>
+        <td><form:label path="lastname"><strong><spring:message
+								code="label.lastName" /></strong></form:label></td>
+        <td><form:input path="lastname" /></td>
+    </tr>
+   
+    <tr>
+				<spring:message code="label.submit" var="labelSubmit"></spring:message>
+				<td colspan="2"><input type="submit" value="${labelSubmit}" /></td>
+			</tr>
+</table>  
+		
+		
 	</form:form>
         </div>
  
